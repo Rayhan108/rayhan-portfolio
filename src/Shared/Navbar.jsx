@@ -1,21 +1,21 @@
 
 import { Link } from "react-router-dom";
-
-import logo from "../assets/rayhan-low-resolution-logo-color-on-transparent-background.png"
+import {AiOutlineArrowRight} from "react-icons/ai"
+import logo from "../assets/rayhan-low-resolution-logo-white-on-transparent-background.png"
 
 const Navbar = () => {
 
     const navRoutes = (
         <>
-          <li className="text-white">
-            <Link className=" font-bold" to="/">Home</Link>
+          <li className="md:text-white   font-poppins cursor-pointer">
+            <Link className=" font-bold hover:text-blue-700" to="/">Home</Link>
           </li>
-          <li className="text-white">
-            <Link  className=" font-bold">About</Link>
+          <li className="md:text-white  font-poppins cursor-pointer">
+            <Link  className=" font-bold hover:text-blue-700">About</Link>
           </li>
    
-           <li className="text-white"> 
-           <Link  className=" font-bold">Contact</Link>
+           <li className="md:text-white  font-poppins cursor-pointer"> 
+           <Link  className=" font-bold hover:text-blue-700">Contact</Link>
           </li>
          
           
@@ -23,7 +23,7 @@ const Navbar = () => {
       );
   
     return (
-        <div className="navbar  w-full   shadow-sm  ">
+        <div className="navbar  w-full fixed z-30 top-0 left-0 py-5   shadow-sm  ">
 
 
   <div className="navbar-start ">
@@ -67,16 +67,16 @@ const Navbar = () => {
         </Link>
           
       </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="navbar-center hidden lg:flex text-black">
+        <ul className="menu menu-horizontal px-1   font-poppins cursor-pointer" >
         {navRoutes}
         </ul>
       </div>
     
            
-      <div className="navbar-end text-white">
+      <div className="navbar-end group">
    
-      <button className="btn btn-outline btn-primary">DownLoad Resume</button>
+      <button className="btn  btn-primary bg-gradient-to-r from-cyan-500 to blue-900"> <span className="text-white  font-bold">DownLoad Resume </span>  <span className=" group-hover:rotate-90 duration-300 "><AiOutlineArrowRight size={25}></AiOutlineArrowRight></span> </button>
          
       </div>
 
