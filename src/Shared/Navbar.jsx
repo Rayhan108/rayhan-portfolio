@@ -1,6 +1,7 @@
 
 import { Link } from "react-router-dom";
 import {AiOutlineArrowRight} from "react-icons/ai"
+import resume from "../../public/resume/Mern Stack Developer resume of Rayhan Shorker.pdf"
 import logo from "../assets/rayhan-low-resolution-logo-white-on-transparent-background.png"
 
 const Navbar = () => {
@@ -74,9 +75,11 @@ const Navbar = () => {
       </div>
     
            
-      <div className="navbar-end group">
+      <div className="navbar-end hover:-hue-rotate-90 group duration-300">
+   <a href={resume} download={resume}>  
    
-      <button className="btn  btn-primary bg-gradient-to-r from-cyan-500 to blue-900"> <span className="text-white  font-bold">DownLoad Resume </span>  <span className=" group-hover:rotate-90 duration-300 "><AiOutlineArrowRight size={25}></AiOutlineArrowRight></span> </button>
+   <button className="btn  btn-primary bg-gradient-to-r from-cyan-500 to blue-900"> <span className="text-white  font-bold">DownLoad Resume </span>  <span className=" group-hover:rotate-90 duration-300 "><AiOutlineArrowRight size={25}></AiOutlineArrowRight></span> </button>
+   </a>
          
       </div>
 

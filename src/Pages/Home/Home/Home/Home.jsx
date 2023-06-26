@@ -1,3 +1,4 @@
+import SocialLinks from "../../../../SocialLinks/SocialLinks";
 import Hero from "../Hero/Hero";
 
 
@@ -6,6 +7,7 @@ const Home = () => {
         <div>
           
             <Hero></Hero>
+            <SocialLinks></SocialLinks>
         </div>
     );
 };

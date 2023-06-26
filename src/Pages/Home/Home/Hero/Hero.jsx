@@ -2,7 +2,9 @@ import styles from "../../../../styles/styles";
 import img from "../../../../assets/heroImg.jpeg";
 import { Typewriter } from 'react-simple-typewriter'
 import TextSpan from "./TextSpan";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
 const Hero = () => {
   const text1 = "Hello, this  is";
   const text3 = "I'm a";
@@ -64,7 +66,15 @@ const typeWriter=["Web Developer" ,"Mern Stack Developer","Frontend Developer"]
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <img  src={img} alt="billing" className=" w-[100%] rounded-2xl relative z-[5]" />
+        <img 
+        
+        data-aos="zoom-in-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        
+        
+        src={img} alt="billing" className=" w-[100%]  rounded-2xl relative z-[5]" />
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
