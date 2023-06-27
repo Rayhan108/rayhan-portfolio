@@ -12,7 +12,7 @@ const Project = () => {
     },[])
  
     return (
-        <div>
+        <div id="project">
               <p className="text-5xl font-bold text-center text-white mb-5 mt-10">
         My Projects
       </p>

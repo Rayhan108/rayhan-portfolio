@@ -12,13 +12,19 @@ const Navbar = () => {
             <Link className=" font-bold hover:text-blue-700" to="/">Home</Link>
           </li>
           <li className="md:text-white  font-poppins cursor-pointer">
-            <Link  className=" font-bold hover:text-blue-700">About</Link>
+            <a href="#about"  className=" font-bold hover:text-blue-700">About</a>
           </li>
    
            <li className="md:text-white  font-poppins cursor-pointer"> 
-           <Link  className=" font-bold hover:text-blue-700">Contact</Link>
+           <a href="#contact"  className=" font-bold hover:text-blue-700">Contact</a>
           </li>
          
+           <li className="md:text-white  font-poppins cursor-pointer"> 
+           <a href="#project"  className=" font-bold hover:text-blue-700">Project</a>
+          </li>
+           <li className="md:text-white  font-poppins cursor-pointer"> 
+           <a href="#skills"  className=" font-bold hover:text-blue-700">My Skills</a>
+          </li>
            <li className="md:text-white  font-poppins cursor-pointer"> 
            <Link to={"/allProject"}  className=" font-bold hover:text-blue-700">All Project</Link>
           </li>
