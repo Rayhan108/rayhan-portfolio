@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Slider from "../../Components/Slider/Slider";
-import Feature from "../../Components/Confiq/Feature/Feature";
+import Feature from "../../Components/Feature/Feature";
 
 import { SiSymantec } from "react-icons/si";
 
@@ -10,7 +10,7 @@ import { FaArrowRight, FaGithub } from "react-icons/fa";
 
 const Details = () => {
   const { id } = useParams();
-  // console.log(id);
+
   const [data, setData] = useState();
   useEffect(() => {
     fetch(`https://rayhan-shorker-portfolio-server.vercel.app/projects/${id}`)
@@ -19,9 +19,8 @@ const Details = () => {
         setData(data);
       });
   }, [id]);
-  console.log(data);
-  // eslint-disable-next-line no-unused-vars
-  // const {_id,name,type,server_link,client_link,live_link,image,technology,feature}=data;
+
+
 
   const Technology = ({ f }) => {
     return (

@@ -19,6 +19,10 @@ const Navbar = () => {
            <Link  className=" font-bold hover:text-blue-700">Contact</Link>
           </li>
          
+           <li className="md:text-white  font-poppins cursor-pointer"> 
+           <Link to={"/allProject"}  className=" font-bold hover:text-blue-700">All Project</Link>
+          </li>
+         
           
         </>
       );

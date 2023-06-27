@@ -1,6 +1,6 @@
 import {FaHandPointRight} from "react-icons/fa"
 
-import styles from "../../../styles/styles";
+import styles from "../../styles/styles";
 const Feature = ({f}) => {
     return (
         <div>
