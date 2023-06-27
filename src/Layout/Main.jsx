@@ -3,9 +3,13 @@ import Navbar from "../Shared/Navbar";
 import Footer from "../Shared/Footer";
 import styles from "../styles/styles";
 
+
+
+
 const Main = () => {
   return (
     <div className="bg-primary w-full overflow-hidden">
+   
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />

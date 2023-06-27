@@ -56,7 +56,7 @@ const typeWriter=["Web Developer" ,"Mern Stack Developer","Frontend Developer"]
       </span>{" "}
      
           </h1>
-          {/* <div className=" md:mr-4 mr-0">
+          {/* <div className=" md:mr-4  mr-0">
             <button className="btn btn-primary btn-lg md:mt-12">
               Contact Me
             </button>
@@ -68,7 +68,7 @@ const typeWriter=["Web Developer" ,"Mern Stack Developer","Frontend Developer"]
       >
         <img 
         
-        data-aos="zoom-in-down"
+        data-aos="fade-in"
         data-aos-offset="200"
         data-aos-delay="50"
         data-aos-duration="1000"

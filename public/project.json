@@ -1,0 +1,132 @@
+[
+  {
+      "_id": "1",
+      "name": "Sports Trainig Camp",
+      "type": "sports academy",
+      "server_link": "https://github.com/Rayhan108/Sports-trainig-camp-server",
+      "client_link": "https://github.com/Rayhan108/Sports-training-camp",
+      "live_link": "https://sports-training-camp.web.app/",
+      "image": [
+        {
+          "img1": "https://i.ibb.co/2FwGYKM/Screenshot-405.png",
+          "img2": "https://i.ibb.co/Tb2sdmH/Screenshot-406.png",
+          "img3": "https://i.ibb.co/sj8BMCb/Screenshot-407.png",
+          "img4": "https://i.ibb.co/wptyhNc/Screenshot-408.png"
+        }
+      ],
+      "feature": [
+        "An admin can made a student to instractor or admin.In admin dashboard there is a manage class page.In this page he can approve class or also denied class.If any class will be denied he can gave a feedback.Admin gmail: rayhan@gmail.com,Admin pass:aA2@aa",
+        "It’s a sports training camp website an instractor can add ,update,sports related class.This class is saw on classes page.He can also see how many students enrolled her class.If her class will be denied by the admin he can see this reason by clicking see feedback button.",
+        "Student can select classs in classes page,this select class will show my selected class which in student dashboard.When he pay this class this class will delete from this page add this class will show my enrolled class page."
+      ],
+      "technology": [
+        " React router",
+        "React hook form",
+        "tanstack-query",
+        "axios",
+        "framer motion",
+        "react stripe js",
+        "react-responsive carousel",
+        "TailwindCSS",
+        "DaisyUI",
+        "Firebase Authentication",
+        "Express.js",
+        "MongoDB"
+      ]
+    },
+  {
+      "_id": "2",
+      "name": "Speedy Racer Toy",
+      "type": "toy marketplace",
+      "server_link": "https://github.com/Rayhan108/speedy-racer-toys-server",
+      "client_link": "https://github.com/Rayhan108/speedy-racer-toys",
+      "live_link": "https://assignment-11-808a5.web.app/",
+      "image": [
+        {
+          "img1": "https://i.ibb.co/VqjYzV3/Screenshot-409.png",
+          "img2": "https://i.ibb.co/s2Xy3Vh/Screenshot-1.jpg",
+          "img3": "https://i.ibb.co/frTy8LV/Screenshot-2.jpg",
+          "img4": "https://i.ibb.co/3d6294V/Screenshot-411.png"
+        }
+      ],
+      "feature": [
+        "It’s a toys marketplace website with privet route only logged in user can add toys ,update and delete . All the generated data is integrated with backend.",
+        "When user logged in he/she can see category wise data. If user clicked view details button they can saw toys details information",
+        "When user add toys he/she can saw only his added toys ascending or descending wise. He can’t show which toys added by other users. In All toys routes user can see all users added toys. He/She can also search by toys name in this route."
+      ],
+      "technology": [
+        " React router",
+        "React hook form",
+        "Firebase Authentication",
+        "TailwindCSS",
+        "DaisyUI",
+        "Firebase Authentication",
+        "Express.js",
+        "MongoDB"
+      ]
+    },
+    {
+      "_id": "3",
+      "name": "Delicious-Food-Recipe",
+      "type": "Bangladesi food recipes",
+      "server_link": "https://github.com/Rayhan108/delecius-recepe-server",
+      "client_link": "https://github.com/Rayhan108/delecious-recipe",
+      "live_link": "https://assignment10-2ab6b.web.app/",
+      "image": [
+        {
+          "img1": "https://i.ibb.co/v4Znf2h/Screenshot-412.png",
+          "img2": "https://i.ibb.co/nPYKzdg/Screenshot-413.png",
+          "img3": "https://i.ibb.co/1mBWCN8/Screenshot-414.png",
+          "img4": "https://i.ibb.co/pv4s4Yy/Screenshot-415.png"
+        }
+      ],
+      "feature": [
+        "This website is about Bangladeshi food recipes. If user can click view recipes button they can show 3 food recipe with cooking methods and ingredients which is made by this chef.",
+
+        "User can also add favorite food by clicking Add Favorite. In blog page I implement download pdf version of my answering question.",
+
+        "Home page is responsive and all the generated data are integrated with backend."
+      ],
+      "technology": [
+        " React router",
+        " React to print",
+       
+        "React lazy load",
+        "React Bootstrap",
+        "Swiper",
+        
+        "Firebase Authentication",
+        "Express.js"
+        
+      ]
+    },
+    {
+      "_id": "4",
+      "name": "User Management",
+      "type": "User Management web application",
+      "server_link": "https://github.com/Rayhan108/delecius-recepe-server",
+      "client_link": "https://github.com/Rayhan108/delecious-recipe",
+      "live_link": "https://assignment10-2ab6b.web.app/",
+      "image": [
+        {
+          "img1": "https://i.ibb.co/pQznQMY/Screenshot-418.png",
+          "img2": "https://i.ibb.co/wWXtWx3/Screenshot-417.png",
+          "img3": "https://i.ibb.co/j6qSdQW/Screenshot-416.png"
+          
+        }
+      ],
+     
+      "technology": [
+          " React router",
+          "React hook form",
+          "tanstack-query",
+          "lottie-react",
+          
+          "TailwindCSS",
+          "DaisyUI",
+          
+          "Express.js",
+          "MongoDB"
+        ]
+    }
+]
