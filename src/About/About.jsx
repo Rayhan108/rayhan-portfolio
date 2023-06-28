@@ -1,7 +1,8 @@
 import Lottie from "lottie-react";
 import animate from "../assets/aboutLottie.json"
-
+import useTitle from "../hooks/useTitle";
 const About = () => {
+  useTitle('About')
     return (
         <>
     <p className="text-5xl font-bold text-center text-white mb-5 mt-10">

@@ -7,8 +7,10 @@ import { SiSymantec } from "react-icons/si";
 
 import styles from "../../styles/styles";
 import { FaArrowRight, FaGithub, FaSpinner } from "react-icons/fa";
+import useTitle from "../../hooks/useTitle";
 
 const Details = () => {
+  useTitle('Project Details')
   const { id } = useParams();
 const [loader,setLoader]=useState(true)
   const [data, setData] = useState();
@@ -91,7 +93,7 @@ const [loader,setLoader]=useState(true)
   Technology Used
 </p>
 <h1 className="font-5xl font-poppins font-extrabold border-b-8  border-dimBlue text-white mb-10"></h1>
-<div className="grid md:grid-cols-5 ml-3">
+<div className="grid md:grid-cols-5 grid-cols-2 ml-3">
   {data?.technology?.map((f,i) => (
     <Technology key={i} f={f}></Technology>
   ))}

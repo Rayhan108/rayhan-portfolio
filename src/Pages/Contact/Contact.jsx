@@ -6,6 +6,8 @@ import { toast } from "react-hot-toast";
 
 
 
+
+
 const Contact = () => {
  
     const form = useRef();
@@ -23,6 +25,7 @@ const Contact = () => {
     };
     return (
    <>
+   
     <p className="text-5xl font-bold text-center text-white mb-5 mt-10">
         Contact Me
       </p>
@@ -32,8 +35,9 @@ const Contact = () => {
    <div id="contact"
       className={`xl:mt-12 flex md:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
+     
         {/* lottie */}
-        <div className="text-center md:mt-16 mt-1  md:w-1/3">
+        <div className="text-center md:mt-16 mt-1  md:w-1/2">
         <Lottie className="" animationData={animate} loop={true} height={100} width={100} />
       </div>
     {/* form */}

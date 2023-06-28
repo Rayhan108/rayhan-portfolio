@@ -1,5 +1,5 @@
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {AiOutlineArrowRight} from "react-icons/ai"
 import resume from "../../public/resume/Mern Stack Developer resume of Rayhan Shorker.pdf"
 import logo from "../assets/rayhan-low-resolution-logo-white-on-transparent-background.png"
@@ -9,7 +9,7 @@ const Navbar = () => {
     const navRoutes = (
         <>
           <li className="md:text-white   font-poppins cursor-pointer">
-            <Link className=" font-bold hover:text-blue-700" to="/">Home</Link>
+            <NavLink className=" font-bold hover:text-blue-700" to="/">Home</NavLink>
           </li>
           <li className="md:text-white  font-poppins cursor-pointer">
             <a href="#about"  className=" font-bold hover:text-blue-700">About</a>
@@ -26,7 +26,7 @@ const Navbar = () => {
            <a href="#skills"  className=" font-bold hover:text-blue-700">My Skills</a>
           </li>
            <li className="md:text-white  font-poppins cursor-pointer"> 
-           <Link to={"/allProject"}  className=" font-bold hover:text-blue-700">All Project</Link>
+           <NavLink to={"/allProject"}  className=" font-bold hover:text-blue-700">All Project</NavLink>
           </li>
          
           

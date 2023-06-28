@@ -11,7 +11,7 @@ const Hero = () => {
 const typeWriter=["Web Developer" ,"Mern Stack Developer","Frontend Developer"]
 
   return (
-    <div className={`flex md:flex-row flex-col bg-frame ${styles.paddingY}`}>
+    <div className={`flex md:flex-row mt-36 md:mt-0 flex-col bg-frame ${styles.paddingY}`}>
    
       <div className="className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} md:h-[800px] md:w-[800px]  " >
         <div className="  md:mt-16">

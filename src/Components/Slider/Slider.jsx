@@ -12,17 +12,17 @@ const Slider = ({data}) => {
             
          </div>
          <div>
-             <img src={data?.image[0]?.img1} />
+             <img src={data?.image[0]?.img2} />
        
             
          </div>
          <div>
-             <img src={data?.image[0]?.img1} />
+             <img src={data?.image[0]?.img3} />
          
              
          </div>
          <div>
-             <img src={data?.image[0]?.img1} />
+             <img src={data?.image[0]?.img4} />
        
             
          </div>
