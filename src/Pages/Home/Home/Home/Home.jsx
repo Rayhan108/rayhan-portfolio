@@ -1,4 +1,5 @@
 import SocialLinks from "../../../../SocialLinks/SocialLinks";
+import Contact from "../../../Contact/Contact";
 import MySkills from "../../../MySkills/MySkills";
 import Hero from "../Hero/Hero";
 import Project from "../Project/Project";
@@ -12,6 +13,7 @@ const Home = () => {
             <SocialLinks></SocialLinks>
             <Project></Project>
             <MySkills></MySkills>
+            <Contact/>
         </div>
     );
 };
