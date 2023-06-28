@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
+import { FaSpinner } from "react-icons/fa";
 
 import { Link } from "react-router-dom";
 
 
 const AllProject = () => {
+  const [loader,setLoader]=useState(true)
     const [data,setData]=useState([]);
     useEffect(()=>{
         fetch('https://rayhan-shorker-portfolio-server.vercel.app/allProjects')
         .then(res=>res.json())
         .then(data=>setData(data))
+        setLoader(false)
     },[])
 
 
@@ -16,7 +19,6 @@ const AllProject = () => {
 
 // card
 const ProjectCard = ({pd}) => {
-   
     const {name,image}=pd;
     return (
        
@@ -76,6 +78,12 @@ const ProjectCard = ({pd}) => {
 
 
     return (
+  <>
+      {loader?       <div className="flex items-center justify-center h-32">
+      <FaSpinner className="animate-spin text-white text-4xl" />
+     </div>:
+    
+    
         <div className="grid md:grid-cols-3 mt-36  gap-5">
             
 
@@ -87,6 +95,8 @@ const ProjectCard = ({pd}) => {
 
 
         </div>
+    }
+  </>
     );
 };
 

@@ -6,17 +6,18 @@ import Feature from "../../Components/Feature/Feature";
 import { SiSymantec } from "react-icons/si";
 
 import styles from "../../styles/styles";
-import { FaArrowRight, FaGithub } from "react-icons/fa";
+import { FaArrowRight, FaGithub, FaSpinner } from "react-icons/fa";
 
 const Details = () => {
   const { id } = useParams();
-
+const [loader,setLoader]=useState(true)
   const [data, setData] = useState();
   useEffect(() => {
     fetch(`https://rayhan-shorker-portfolio-server.vercel.app/projects/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setData(data);
+        setLoader(false)
       });
   }, [id]);
 
@@ -45,56 +46,72 @@ const Details = () => {
   };
 
   return (
-    <div>
-      <Slider data={data}></Slider>
-      {/* button */}
-      <div className="flex flex-row gap-5 md:ml-[480px] mt-10  ">
-        <div className=" ">
-          <Link to={data?.live_link}>
-            {" "}
-            <button className="btn btn-outline btn-primary">
-              Preview <FaArrowRight></FaArrowRight>
-            </button>
-          </Link>
-        </div>
-        <div>
-          <Link to={data?.client_link}>
-            {" "}
-            <button className="btn btn-outline btn-primary">
-              Client Site<FaGithub size={23}></FaGithub>
-            </button>
-          </Link>
-        </div>
-        <div>
-          <Link to={data?.server_link}>
-            {" "}
-            <button className="btn btn-outline btn-primary">
-              Server Site <FaGithub size={23}></FaGithub>
-            </button>
-          </Link>
-        </div>
-      </div>
-      {/* technology */}
+   <>
+   {
+  loader?<div className="flex items-center justify-center h-32">
+  <FaSpinner className="animate-spin text-white text-4xl" />
+  </div> :
+  <div>
 
-      <p className="text-5xl font-bold text-white mb-5 mt-10">
-        Technology Used
-      </p>
-      <h1 className="font-5xl font-poppins font-extrabold border-b-8  border-dimBlue text-white mb-10"></h1>
-      <div className="grid md:grid-cols-5 ml-3">
-        {data?.technology?.map((f) => (
-          <Technology key={f?._id} f={f}></Technology>
-        ))}
-      </div>
 
-      {/* feature */}
-      <p className="text-5xl font-bold text-white mb-5 mt-10">Feature</p>
-      <div>
-        <h1 className="font-5xl font-poppins font-extrabold border-b-8 mb-10 border-dimBlue text-white"></h1>
-        {data?.feature?.map((f) => (
-          <Feature key={f?._id} f={f}></Feature>
-        ))}
-      </div>
-    </div>
+
+
+
+<Slider data={data}></Slider>
+{/* button */}
+<div className="flex flex-row gap-5 md:ml-[480px] mt-10  ">
+  <div className=" ">
+    <Link to={data?.live_link}>
+      {" "}
+      <button className="btn btn-outline btn-primary">
+        Preview <FaArrowRight></FaArrowRight>
+      </button>
+    </Link>
+  </div>
+  <div>
+    <Link to={data?.client_link}>
+      {" "}
+      <button className="btn btn-outline btn-primary">
+        Client Site<FaGithub size={23}></FaGithub>
+      </button>
+    </Link>
+  </div>
+  <div>
+    <Link to={data?.server_link}>
+      {" "}
+      <button className="btn btn-outline btn-primary">
+        Server Site <FaGithub size={23}></FaGithub>
+      </button>
+    </Link>
+  </div>
+</div>
+{/* technology */}
+
+<p className="text-5xl font-bold text-white mb-5 mt-10">
+  Technology Used
+</p>
+<h1 className="font-5xl font-poppins font-extrabold border-b-8  border-dimBlue text-white mb-10"></h1>
+<div className="grid md:grid-cols-5 ml-3">
+  {data?.technology?.map((f,i) => (
+    <Technology key={i} f={f}></Technology>
+  ))}
+</div>
+
+{/* feature */}
+<p className="text-5xl font-bold text-white mb-5 mt-10">Feature</p>
+<div>
+  <h1 className="font-5xl font-poppins font-extrabold border-b-8 mb-10 border-dimBlue text-white"></h1>
+  {data?.feature?.map((f) => (
+    <Feature key={f?._id} f={f}></Feature>
+  ))}
+</div>
+</div>
+}
+   
+   
+   
+   
+   </>
   );
 };
 
