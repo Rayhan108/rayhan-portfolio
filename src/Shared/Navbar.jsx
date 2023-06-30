@@ -88,7 +88,7 @@ const Navbar = () => {
       <div className="navbar-end hover:-hue-rotate-90 group duration-300">
    <a href={resume} download={resume}>  
    
-   <button className="btn  btn-primary bg-gradient-to-r from-cyan-500 to blue-900"> <span className="text-white  font-bold">DownLoad Resume </span>  <span className=" group-hover:rotate-90 duration-300 "><AiOutlineArrowRight size={25}></AiOutlineArrowRight></span> </button>
+   <button className="btn sm:flex sm:flex-row btn-primary bg-gradient-to-r from-cyan-500 to blue-900"> <span className="text-white  font-bold">DownLoad Resume </span>  <span className=" group-hover:rotate-90 duration-300 "><AiOutlineArrowRight size={25}></AiOutlineArrowRight></span> </button>
    </a>
          
       </div>

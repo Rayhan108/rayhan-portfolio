@@ -22,7 +22,10 @@ const MySkills = () => {
       </p>
       <h1 className="font-5xl font-poppins font-extrabold border-b-8  border-dimBlue text-white mb-10"></h1>
 
-      <div className="grid md:grid-cols-5 grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-5 grid-cols-3 gap-5"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+      >
         <div className="flex flex-col items-center justify-center p-6 rounded-[20px] feature-card mt-5">
           <div
             className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
