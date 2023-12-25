@@ -1,5 +1,5 @@
 import styles from "../../../../styles/styles";
-import img from "../../../../assets/heroImg.jpeg";
+import img from "../../../../assets/heroImg.png";
 import { Typewriter } from 'react-simple-typewriter'
 import TextSpan from "./TextSpan";
 import AOS from 'aos';
@@ -13,7 +13,7 @@ const typeWriter=["Web Developer" ,"Mern Stack Developer","Frontend Developer"]
   return (
     <div className={`flex md:flex-row mt-36 md:mt-0 flex-col bg-frame ${styles.paddingY}`}>
    
-      <div className="className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`} md:h-[800px] md:w-[800px]  " >
+      <div className=" className={`flex-1 flex justify-center items-start flex-col xl:px-0 sm:px-16 px-6`} md:h-[800px] md:w-[800px]  " >
         <div className="  md:mt-16">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
             {text1.split("").map((letter, id) => (
@@ -66,20 +66,22 @@ const typeWriter=["Web Developer" ,"Mern Stack Developer","Frontend Developer"]
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
+        {/* relative class cls chilo ekhane */}
         <img 
         
-        data-aos="fade-in"
-        data-aos-offset="200"
-        data-aos-delay="50"
-        data-aos-duration="1000"
+        // data-aos="fade-in"
+        // data-aos-offset="200"
+        // data-aos-delay="50"
+        // data-aos-duration="1000"
         
         
-        src={img} alt="billing" className=" w-[100%]  rounded-2xl relative z-[5]" />
+        src={img} alt="billing" className=" w-[100%]  rounded-2xl  md:z-[5]" />
+          {/* relative class cls chilo ekhane */}
 
         {/* gradient start */}
         <div className="absolute z-[0] w-[40%] h-[35%] top-0 pink__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-0" />
+        <div className="absolute z-[0] w-[50%] h-[50%] left-28 right-0 sm:bottom-0 md:bottom-40  blue__gradient" />
         {/* gradient end */}
       </div>
     

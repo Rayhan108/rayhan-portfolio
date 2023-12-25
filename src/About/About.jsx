@@ -18,7 +18,7 @@ const About = () => {
         <div className="text-center md:mt-16 mt-1  md:w-1/3">
         <Lottie className="" animationData={animate} loop={true} height={100} width={100} />
       </div>
-    {/* form */}
+  
       <div
         
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl md:w-1/2 my-5'

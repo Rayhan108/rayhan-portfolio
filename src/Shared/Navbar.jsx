@@ -28,7 +28,15 @@ const Navbar = () => {
            <li className="md:text-white  font-poppins cursor-pointer"> 
            <NavLink to={"/allProject"}  className=" font-bold hover:text-blue-700">All Project</NavLink>
           </li>
+         <li>
+         <div className=" lg:navbar-end  hover:-hue-rotate-90 group duration-300">
+   <a href={resume} download={resume}>  
+   
+   <button className="btn   btn-primary bg-gradient-to-r from-cyan-500 to blue-900"> <span className="text-white  font-bold">DownLoad Resume </span>  <span className=" group-hover:rotate-90 duration-300 "><AiOutlineArrowRight size={25}></AiOutlineArrowRight></span> </button>
+   </a>
          
+      </div>
+         </li>
           
         </>
       );
@@ -57,7 +65,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-64"
           >
             
            {navRoutes}
@@ -85,13 +93,7 @@ const Navbar = () => {
       </div>
     
            
-      <div className="navbar-end hover:-hue-rotate-90 group duration-300">
-   <a href={resume} download={resume}>  
-   
-   <button className="btn sm:flex sm:flex-row btn-primary bg-gradient-to-r from-cyan-500 to blue-900"> <span className="text-white  font-bold">DownLoad Resume </span>  <span className=" group-hover:rotate-90 duration-300 "><AiOutlineArrowRight size={25}></AiOutlineArrowRight></span> </button>
-   </a>
-         
-      </div>
+      
 
 
 
