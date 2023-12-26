@@ -61,7 +61,7 @@ const [loader,setLoader]=useState(true)
 
 <Slider data={data}></Slider>
 {/* button */}
-<div className="flex flex-row gap-5 md:ml-[480px] mt-10  ">
+<div className=" sm:grid  sm:grid-cols-2 sm:gap-1 md:flex md:flex-row md:gap-5 md:ml-[480px] md:mt-10  ">
   <div className=" ">
     <Link to={data?.live_link}>
       {" "}

@@ -19,7 +19,7 @@ const ProjectCard = ({ pd }) => {
         </div>
         <div>
           <div className="items-center justify-center mt-3 flex flex-row gap-3">
-          <Link to={`/details/${_id}`}>
+          <Link to={`/detailsLayout/details/${_id}`}>
               <button className="btn  btn-primary hover:-hue-rotate-90 bg-gradient-to-r from-cyan-500 to blue-900">
                 {" "}
                 <span className="text-white  font-bold">

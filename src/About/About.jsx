@@ -2,6 +2,7 @@ import Lottie from "lottie-react";
 import animate from "../assets/aboutLottie.json";
 import useTitle from "../hooks/useTitle";
 import { useState } from "react";
+import styles from "../styles/styles";
 
 const About = () => {
   useTitle("About");
@@ -14,6 +15,7 @@ const About = () => {
     
   
   }
+
   const [isOpen,setIsOpen]=useState(false);
   return (
     <>
@@ -24,7 +26,7 @@ const About = () => {
 
       <div
         id="about"
-        className={`xl:mt-12 flex md:flex-row flex-col-reverse gap-10 overflow-hidden`}
+        className={`${!isOpen && styles.marBot} xl:mt-12 flex md:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
         {/* lottie */}
         <div className="text-center md:mt-16 mt-1  md:w-1/3">
@@ -40,8 +42,9 @@ const About = () => {
         <div className="flex-[0.75] bg-black-100 p-8 rounded-2xl md:w-1/2 my-5">
           <div className="p-3 leading-6 ">
             <p
-              style={isOpen?null:paragraphStyle}
-              className={`text-white font-poppins sm:`}
+            
+              style={isOpen ?null:paragraphStyle}
+              className={`text-white font-poppins ${!isOpen && styles.marTop}`}
             >
               <span className="font-bold">My name is Rayhan Shorker.</span>
               Currently I studied City University at CSE Depertment . My

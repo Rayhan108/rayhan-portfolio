@@ -81,13 +81,6 @@
 }
 
 
-.line-brake{
-  WebkitLineClamp:3,
-        WebkitBoxOrient='vertical',
-        overflow='hidden',
-        display='-webkit-box',
-        WebkitAlignContent='content-position'
-}
 
 
 
@@ -98,8 +91,9 @@
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(47, 0, 189, 0) 0%, #1185f3 100%);
+  background: linear-gradient(180deg, rgba(47, 0, 189, 0) 0%, #0d00ff 100%);
   filter: blur(123px);
+
 }
 
 .pink__gradient {

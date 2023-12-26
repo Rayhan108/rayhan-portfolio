@@ -40,9 +40,7 @@ const Navbar = () => {
            <li className="md:text-white  font-poppins cursor-pointer"> 
            <a href="#skills"  className=" font-bold hover:text-blue-700">My Skills</a>
           </li>
-           <li className="md:text-white  font-poppins cursor-pointer"> 
-           <NavLink to={"/allProject"}  className=" font-bold hover:text-blue-700">All Project</NavLink>
-          </li>
+         
          <li>
          <div className="   hover:-hue-rotate-90 group duration-300">
    <a href={resume} download={resume}>  
@@ -102,7 +100,7 @@ const Navbar = () => {
         </Link>
           
       </div>
-      <div className="navbar-center hidden lg:flex text-black">
+      <div className="navbar-end hidden lg:flex text-black">
         <ul className="menu menu-horizontal px-1   font-poppins cursor-pointer" >
         {navRoutes}
         </ul>
