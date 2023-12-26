@@ -81,7 +81,13 @@
 }
 
 
-
+.line-brake{
+  WebkitLineClamp:3,
+        WebkitBoxOrient='vertical',
+        overflow='hidden',
+        display='-webkit-box',
+        WebkitAlignContent='content-position'
+}
 
 
 

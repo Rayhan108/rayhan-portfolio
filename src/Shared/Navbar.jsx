@@ -3,9 +3,24 @@ import { Link, NavLink } from "react-router-dom";
 import {AiOutlineArrowRight} from "react-icons/ai"
 import resume from "../../public/resume/Mern Stack Developer resume of Rayhan Shorker.pdf"
 import logo from "../assets/rayhan-low-resolution-logo-white-on-transparent-background.png"
+// import { useEffect, useState } from "react";
 
 const Navbar = () => {
-
+  // const [theme, setTheme] = useState(
+  //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  // );
+  // useEffect(() => {
+  //   localStorage.setItem("theme", theme);
+  //   const localTheme = localStorage.getItem("theme");
+  //   document.querySelector("html").setAttribute("data-theme", localTheme);
+  // }, [theme]);
+  // const handleToggle = (e) => {
+  //   if (e.target.checked) {
+  //     setTheme("dark");
+  //   } else {
+  //     setTheme("light");
+  //   }
+  // };
     const navRoutes = (
         <>
           <li className="md:text-white   font-poppins cursor-pointer">
@@ -29,7 +44,7 @@ const Navbar = () => {
            <NavLink to={"/allProject"}  className=" font-bold hover:text-blue-700">All Project</NavLink>
           </li>
          <li>
-         <div className=" lg:navbar-end  hover:-hue-rotate-90 group duration-300">
+         <div className="   hover:-hue-rotate-90 group duration-300">
    <a href={resume} download={resume}>  
    
    <button className="btn   btn-primary bg-gradient-to-r from-cyan-500 to blue-900"> <span className="text-white  font-bold">DownLoad Resume </span>  <span className=" group-hover:rotate-90 duration-300 "><AiOutlineArrowRight size={25}></AiOutlineArrowRight></span> </button>
@@ -37,6 +52,7 @@ const Navbar = () => {
          
       </div>
          </li>
+
           
         </>
       );
@@ -65,7 +81,7 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-64"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-64 "
           >
             
            {navRoutes}
