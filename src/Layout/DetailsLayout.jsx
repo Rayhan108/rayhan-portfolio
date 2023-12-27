@@ -9,7 +9,7 @@ const DetailsLayout = () => {
    
       <div className={`${styles.paddingX} py-5 ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-         <Link to="/"><button className="btn btn-outline btn-primary">Back to previous Page</button></Link>
+         <Link to="/"><button className="btn btn-outline text-white">Back to previous Page</button></Link>
         </div>
       </div>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>

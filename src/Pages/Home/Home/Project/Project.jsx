@@ -40,7 +40,7 @@ data?.map(pd=><ProjectCard key={pd?._id} pd={pd}></ProjectCard>)
             </div>}
             <div className="text-right mr-3 mt-10">
            
-                <button onClick={()=>setIsShow(!isShow)} className="btn btn-outline btn-primary">{isShow?'Show Less':'Show More'}</button>
+                <button onClick={()=>setIsShow(!isShow)} className="btn btn-outline  text-white">{isShow?'Show Less':'Show More'}</button>
             </div>
         </div>
 }

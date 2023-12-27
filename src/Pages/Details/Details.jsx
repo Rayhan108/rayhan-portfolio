@@ -61,11 +61,11 @@ const [loader,setLoader]=useState(true)
 
 <Slider data={data}></Slider>
 {/* button */}
-<div className=" sm:grid  sm:grid-cols-2 sm:gap-1 md:flex md:flex-row md:gap-5 md:ml-[480px] md:mt-10  ">
+<div className=" grid  grid-cols-3 gap-3   md:flex md:flex-row md:gap-5 md:ml-[480px] md:mt-10  ">
   <div className=" ">
     <Link to={data?.live_link}>
       {" "}
-      <button className="btn btn-outline btn-primary">
+      <button className="btn btn-outline text-white">
         Preview <FaArrowRight></FaArrowRight>
       </button>
     </Link>
@@ -73,7 +73,7 @@ const [loader,setLoader]=useState(true)
   <div>
     <Link to={data?.client_link}>
       {" "}
-      <button className="btn btn-outline btn-primary">
+      <button className="btn btn-outline text-white">
         Client Site<FaGithub size={23}></FaGithub>
       </button>
     </Link>
@@ -81,7 +81,7 @@ const [loader,setLoader]=useState(true)
   <div>
     <Link to={data?.server_link}>
       {" "}
-      <button className="btn btn-outline btn-primary">
+      <button className="btn btn-outline text-white">
         Server Site <FaGithub size={23}></FaGithub>
       </button>
     </Link>

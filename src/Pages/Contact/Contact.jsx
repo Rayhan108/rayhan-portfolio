@@ -51,7 +51,7 @@ const Contact = () => {
           ref={form} onSubmit={sendEmail}
           className='mt-12 flex flex-col gap-8 text-black'
         >
-         <div className="flex flex-row justify-between gap-3">
+         <div className=" grid grid-cols-1  md:flex md:flex-row md:justify-between gap-3">
          <label className='flex flex-col w-full'>
             <span className='text-white font-medium mb-4'>Name</span>
             <input

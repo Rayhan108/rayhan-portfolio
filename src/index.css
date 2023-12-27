@@ -89,7 +89,13 @@
   background: var(--black-gradient);
   box-shadow: var(--card-shadow);
 }
-
+.box:hover{
+background-position: bottom;
+}
+.active{
+  color: #0d00ff;
+  text-decoration: underline ;
+}
 .blue__gradient {
   background: linear-gradient(180deg, rgba(47, 0, 189, 0) 0%, #0d00ff 100%);
   filter: blur(123px);
