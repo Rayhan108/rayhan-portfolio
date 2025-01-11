@@ -1,5 +1,5 @@
 import styles from "../../../../styles/styles";
-import img from "../../../../assets/heroImg.png";
+import img from "../../../../assets/2.png";
 import { Typewriter } from 'react-simple-typewriter'
 import TextSpan from "./TextSpan";
 import AOS from 'aos';
@@ -64,7 +64,7 @@ const typeWriter=["Web Developer" ,"Mern Stack Developer","Frontend Developer"]
         </div>
       </div>
       <div
-        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
+        className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative `}
       >
         {/* relative class cls chilo ekhane */}
         <img 

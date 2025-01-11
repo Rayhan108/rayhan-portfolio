@@ -1,9 +1,10 @@
 
 // import { NavLink } from "react-router-dom";
-import { Link } from "react-scroll";
+
 import {AiOutlineArrowRight} from "react-icons/ai"
 import resume from "../../public/resume/Mern Stack Developer resume of Rayhan Shorker.pdf"
 import logo from "../assets/rayhan-low-resolution-logo-white-on-transparent-background.png"
+import { Link } from "react-router-dom";
 // import { useEffect, useState } from "react";
 
 const Navbar = () => {

@@ -116,3 +116,41 @@ background-position: bottom;
   justify-content: center;
   align-items: center;
 }
+.photo-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px; /* Adjust as needed */
+  height: 200px; /* Oval shape for the glow */
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2), transparent);
+  border-radius: 50%; /* Optional if you want a circular effect */
+  animation: glowEffect 2s infinite ease-in-out;
+  overflow: hidden;
+}
+
+.photo-glow {
+  position: absolute;
+  width: 80%; /* Control the image and glow size */
+  height: auto;
+  border-radius: 50%; /* Makes the glow effect circular */
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
+  padding: 10px; /* Space around the image for glow */
+  background: rgba(0, 0, 0, 0.8); /* Background for the oval effect */
+  animation: glowEffect 2s infinite ease-in-out;
+}
+
+.photo {
+  width: 100%; /* Take 100% of the parent */
+  border-radius: 50%;
+  object-fit: cover; /* Keep aspect ratio */
+}
+
+@keyframes glowEffect {
+  0%, 100% {
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 30px 10px rgba(0, 255, 255, 1);
+  }
+}
